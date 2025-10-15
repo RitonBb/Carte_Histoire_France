@@ -451,6 +451,54 @@ const historicalEvents = [
         ]
     },
     {
+        title: "Bataille de Valmy",
+        description: "Première victoire militaire importante de la Révolution française contre les forces prussiennes. Cette bataille sauve la République naissante et devient un symbole national.",
+        coordinates: [
+            49.0744,
+            4.705
+        ],
+        period: "revolution",
+        date: "20 septembre 1792",
+        year: 1792,
+        location: "Valmy, Grand Est",
+        category: "Bataille",
+        sources: [
+            {
+                name: "Wikipedia - Bataille de Valmy",
+                url: "https://fr.wikipedia.org/wiki/Bataille_de_Valmy"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q153825"
+            }
+        ],
+        id: 29
+    },
+    {
+        title: "Exécution de Louis XVI",
+        description: "Louis XVI est guillotiné place de la Révolution (actuelle place de la Concorde). L'exécution du roi marque la fin de plus de mille ans de monarchie française.",
+        coordinates: [
+            48.8656,
+            2.3212
+        ],
+        period: "revolution",
+        date: "21 janvier 1793",
+        year: 1793,
+        location: "Paris, Place de la Concorde",
+        category: "Politique",
+        sources: [
+            {
+                name: "Wikipedia - Exécution de Louis XVI",
+                url: "https://fr.wikipedia.org/wiki/Ex%C3%A9cution_de_Louis_XVI"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q385011"
+            }
+        ],
+        id: 30
+    },
+    {
         id: 10,
         title: "Couronnement de Napoléon",
         description: "Napoléon Bonaparte se couronne empereur des Français à Notre-Dame de Paris en présence du pape Pie VII. Cet événement marque l'établissement du Premier Empire.",
@@ -493,6 +541,78 @@ const historicalEvents = [
                 url: "https://fr.wikipedia.org/wiki/Bataille_d%27Austerlitz"
             }
         ]
+    },
+    {
+        title: "Bataille de Waterloo",
+        description: "Défaite définitive de Napoléon face aux armées britanniques et prussiennes. Cette bataille marque la fin du Premier Empire et l'exil de Napoléon à Sainte-Hélène.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "empire",
+        date: "18 juin 1815",
+        year: 1815,
+        location: "Waterloo (référence à Paris)",
+        category: "Bataille",
+        sources: [
+            {
+                name: "Wikipedia - Bataille de Waterloo",
+                url: "https://fr.wikipedia.org/wiki/Bataille_de_Waterloo"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q48314"
+            }
+        ],
+        id: 31
+    },
+    {
+        title: "Révolution de 1848",
+        description: "Soulèvement populaire à Paris conduisant à l'abdication de Louis-Philippe et à la proclamation de la Deuxième République. Cette révolution inspire d'autres mouvements en Europe.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "19e-siecle",
+        date: "22-24 février 1848",
+        year: 1848,
+        location: "Paris, Île-de-France",
+        category: "Révolution",
+        sources: [
+            {
+                name: "Wikipedia - Révolution française de 1848",
+                url: "https://fr.wikipedia.org/wiki/R%C3%A9volution_fran%C3%A7aise_de_1848"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q58296"
+            }
+        ],
+        id: 32
+    },
+    {
+        title: "Commune de Paris",
+        description: "Gouvernement révolutionnaire et socialiste qui contrôle Paris pendant deux mois. La répression sanglante de la Commune marque profondément l'histoire sociale française.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "19e-siecle",
+        date: "18 mars - 28 mai 1871",
+        year: 1871,
+        location: "Paris, Île-de-France",
+        category: "Révolution",
+        sources: [
+            {
+                name: "Wikipedia - Commune de Paris (1871)",
+                url: "https://fr.wikipedia.org/wiki/Commune_de_Paris_(1871)"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q133132"
+            }
+        ],
+        id: 33
     },
     {
         id: 12,
@@ -543,6 +663,54 @@ const historicalEvents = [
         ]
     },
     {
+        title: "Loi de séparation des Églises et de l'État",
+        description: "Adoption de la loi instaurant la laïcité en France. Cette loi fondamentale établit la séparation de l'Église et de l'État et garantit la liberté de conscience.",
+        coordinates: [
+            48.8606,
+            2.3376
+        ],
+        period: "19e-siecle",
+        date: "9 décembre 1905",
+        year: 1905,
+        location: "Paris, Assemblée nationale",
+        category: "Politique",
+        sources: [
+            {
+                name: "Wikipedia - Loi de séparation des Églises et de l'État",
+                url: "https://fr.wikipedia.org/wiki/Loi_de_s%C3%A9paration_des_%C3%89glises_et_de_l%27%C3%89tat"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q852697"
+            }
+        ],
+        id: 34
+    },
+    {
+        title: "Bataille de la Marne",
+        description: "Première grande victoire alliée de la Première Guerre mondiale. Cette bataille arrête l'avancée allemande et sauve Paris d'une occupation.",
+        coordinates: [
+            48.9667,
+            3.6
+        ],
+        period: "20e-siecle",
+        date: "5-12 septembre 1914",
+        year: 1914,
+        location: "Marne, Grand Est",
+        category: "Bataille",
+        sources: [
+            {
+                name: "Wikipedia - Première bataille de la Marne",
+                url: "https://fr.wikipedia.org/wiki/Premi%C3%A8re_bataille_de_la_Marne"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q152109"
+            }
+        ],
+        id: 35
+    },
+    {
         id: 14,
         title: "Bataille de Verdun",
         description: "L'une des batailles les plus meurtrières de la Première Guerre mondiale. Le sacrifice des soldats français à Verdun devient un symbole de la résistance nationale.",
@@ -565,6 +733,54 @@ const historicalEvents = [
                 url: "https://www.wikidata.org/wiki/Q48258"
             }
         ]
+    },
+    {
+        title: "Armistice de 1918",
+        description: "Signature de l'armistice entre les Alliés et l'Allemagne dans un wagon à Rethondes, mettant fin à la Première Guerre mondiale. Cette date devient le symbole de la paix retrouvée.",
+        coordinates: [
+            49.4267,
+            2.9069
+        ],
+        period: "20e-siecle",
+        date: "11 novembre 1918",
+        year: 1918,
+        location: "Rethondes, Hauts-de-France",
+        category: "Politique",
+        sources: [
+            {
+                name: "Wikipedia - Armistice de 1918",
+                url: "https://fr.wikipedia.org/wiki/Armistice_de_1918"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q133139"
+            }
+        ],
+        id: 36
+    },
+    {
+        title: "Front populaire",
+        description: "Coalition de gauche remportant les élections législatives. Le gouvernement de Léon Blum instaure les congés payés et la semaine de 40 heures, transformant la société française.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "20e-siecle",
+        date: "1936",
+        year: 1936,
+        location: "Paris, Île-de-France",
+        category: "Sociale",
+        sources: [
+            {
+                name: "Wikipedia - Front populaire (France)",
+                url: "https://fr.wikipedia.org/wiki/Front_populaire_(France)"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q170197"
+            }
+        ],
+        id: 37
     },
     {
         id: 15,
@@ -615,6 +831,78 @@ const historicalEvents = [
         ]
     },
     {
+        title: "Libération de Paris",
+        description: "Libération de Paris par les Forces françaises de l'intérieur et les Alliés après quatre ans d'occupation allemande. La libération de la capitale symbolise la renaissance de la France.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "20e-siecle",
+        date: "19-25 août 1944",
+        year: 1944,
+        location: "Paris, Île-de-France",
+        category: "Bataille",
+        sources: [
+            {
+                name: "Wikipedia - Libération de Paris",
+                url: "https://fr.wikipedia.org/wiki/Lib%C3%A9ration_de_Paris"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q152499"
+            }
+        ],
+        id: 38
+    },
+    {
+        title: "Traité de Rome",
+        description: "Signature du traité instituant la Communauté économique européenne (CEE). La France, avec cinq autres pays, pose les fondations de l'Union européenne actuelle.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "20e-siecle",
+        date: "25 mars 1957",
+        year: 1957,
+        location: "Paris (siège français)",
+        category: "Politique",
+        sources: [
+            {
+                name: "Wikipedia - Traité de Rome",
+                url: "https://fr.wikipedia.org/wiki/Trait%C3%A9_de_Rome"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q8868"
+            }
+        ],
+        id: 39
+    },
+    {
+        title: "Accords d'Évian",
+        description: "Signature des accords mettant fin à la guerre d'Algérie et reconnaissant l'indépendance de l'Algérie. Cet événement marque la fin de l'empire colonial français.",
+        coordinates: [
+            46.4,
+            6.59
+        ],
+        period: "20e-siecle",
+        date: "18 mars 1962",
+        year: 1962,
+        location: "Évian-les-Bains, Auvergne-Rhône-Alpes",
+        category: "Politique",
+        sources: [
+            {
+                name: "Wikipedia - Accords d'Évian",
+                url: "https://fr.wikipedia.org/wiki/Accords_d%27%C3%89vian"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q365783"
+            }
+        ],
+        id: 40
+    },
+    {
         id: 17,
         title: "Mai 68",
         description: "Mouvement de contestation sociale et culturelle majeur combinant grève générale et révolte étudiante. Mai 68 transforme profondément la société française.",
@@ -639,6 +927,78 @@ const historicalEvents = [
         ]
     },
     {
+        title: "Inauguration du TGV Paris-Lyon",
+        description: "Mise en service de la première ligne à grande vitesse en France. Le TGV devient le symbole de l'excellence technologique française et révolutionne le transport ferroviaire.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "20e-siecle",
+        date: "27 septembre 1981",
+        year: 1981,
+        location: "Paris, Île-de-France",
+        category: "Infrastructure",
+        sources: [
+            {
+                name: "Wikipedia - LGV Sud-Est",
+                url: "https://fr.wikipedia.org/wiki/LGV_Sud-Est"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q948490"
+            }
+        ],
+        id: 41
+    },
+    {
+        title: "Abolition de la peine de mort",
+        description: "Adoption de la loi abolissant la peine de mort en France sous l'impulsion de Robert Badinter. La France devient l'un des premiers pays européens à abolir la peine capitale.",
+        coordinates: [
+            48.8606,
+            2.3376
+        ],
+        period: "20e-siecle",
+        date: "9 octobre 1981",
+        year: 1981,
+        location: "Paris, Assemblée nationale",
+        category: "Politique",
+        sources: [
+            {
+                name: "Wikipedia - Abolition de la peine de mort en France",
+                url: "https://fr.wikipedia.org/wiki/Abolition_de_la_peine_de_mort_en_France"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q2820489"
+            }
+        ],
+        id: 42
+    },
+    {
+        title: "Ouverture du Musée du Louvre Pyramide",
+        description: "Inauguration de la pyramide du Louvre conçue par l'architecte I.M. Pei. Cette structure moderne au cœur de Paris devient l'un des symboles architecturaux du pays.",
+        coordinates: [
+            48.8606,
+            2.3376
+        ],
+        period: "20e-siecle",
+        date: "29 mars 1989",
+        year: 1989,
+        location: "Paris, Musée du Louvre",
+        category: "Architecture",
+        sources: [
+            {
+                name: "Wikipedia - Pyramide du Louvre",
+                url: "https://fr.wikipedia.org/wiki/Pyramide_du_Louvre"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q1122087"
+            }
+        ],
+        id: 43
+    },
+    {
         id: 18,
         title: "Ouverture du Tunnel sous la Manche",
         description: "Inauguration du tunnel ferroviaire reliant la France et le Royaume-Uni. Cette prouesse technique symbolise la coopération européenne moderne.",
@@ -661,6 +1021,102 @@ const historicalEvents = [
                 url: "https://www.wikidata.org/wiki/Q4103"
             }
         ]
+    },
+    {
+        title: "Victoire de la France en Coupe du Monde 1998",
+        description: "La France remporte la Coupe du Monde de football à domicile, au Stade de France. Cette victoire devient un symbole d'unité nationale et de fierté collective.",
+        coordinates: [
+            48.9244,
+            2.3601
+        ],
+        period: "20e-siecle",
+        date: "12 juillet 1998",
+        year: 1998,
+        location: "Saint-Denis, Île-de-France",
+        category: "Sociale",
+        sources: [
+            {
+                name: "Wikipedia - Coupe du monde de football 1998",
+                url: "https://fr.wikipedia.org/wiki/Coupe_du_monde_de_football_1998"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q101730"
+            }
+        ],
+        id: 44
+    },
+    {
+        title: "Passage à l'Euro",
+        description: "La France adopte l'euro comme monnaie officielle, abandonnant le franc français. Cette transition marque une étape majeure dans l'intégration européenne.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "contemporain",
+        date: "1er janvier 2002",
+        year: 2002,
+        location: "France entière",
+        category: "Politique",
+        sources: [
+            {
+                name: "Wikipedia - Passage à l'euro en France",
+                url: "https://fr.wikipedia.org/wiki/Euro#France"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q4916"
+            }
+        ],
+        id: 45
+    },
+    {
+        title: "Attentats du 13 novembre 2015",
+        description: "Série d'attentats terroristes à Paris et Saint-Denis faisant 130 morts. Cet événement tragique marque profondément la société française et renforce la lutte contre le terrorisme.",
+        coordinates: [
+            48.8566,
+            2.3522
+        ],
+        period: "contemporain",
+        date: "13 novembre 2015",
+        year: 2015,
+        location: "Paris, Île-de-France",
+        category: "Sociale",
+        sources: [
+            {
+                name: "Wikipedia - Attentats du 13 novembre 2015 en France",
+                url: "https://fr.wikipedia.org/wiki/Attentats_du_13_novembre_2015_en_France"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q21572322"
+            }
+        ],
+        id: 46
+    },
+    {
+        title: "Incendie de Notre-Dame de Paris",
+        description: "Un incendie majeur ravage la cathédrale Notre-Dame de Paris, détruisant sa flèche et sa charpente. Cet événement suscite une émotion internationale et lance un vaste projet de restauration.",
+        coordinates: [
+            48.853,
+            2.3499
+        ],
+        period: "contemporain",
+        date: "15 avril 2019",
+        year: 2019,
+        location: "Paris, Île-de-France",
+        category: "Architecture",
+        sources: [
+            {
+                name: "Wikipedia - Incendie de Notre-Dame de Paris",
+                url: "https://fr.wikipedia.org/wiki/Incendie_de_Notre-Dame_de_Paris"
+            },
+            {
+                name: "Wikidata",
+                url: "https://www.wikidata.org/wiki/Q61285149"
+            }
+        ],
+        id: 47
     }
 ];
 
