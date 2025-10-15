@@ -66,9 +66,35 @@ Utilisez le menu déroulant en haut pour filtrer les événements par période h
 - **🔄 Actualiser** : Recharge les événements sur la carte
 - **ℹ️ À propos** : Affiche les informations sur l'application
 
+## 🤖 Scripts d'Enrichissement Automatique
+
+L'application inclut des scripts Node.js pour enrichir automatiquement la base de données avec des événements historiques de qualité.
+
+### Script d'enrichissement (Recommandé)
+
+```bash
+# Ajouter 10 nouveaux événements de haute qualité
+npm run enrich
+
+# Ajouter 20 événements
+npm run enrich-more
+
+# Ajouter tous les événements disponibles
+npm run enrich-all
+```
+
+**Caractéristiques :**
+- ✅ Base de données curée de 29 événements historiques français
+- ✅ Qualité garantie à 100%
+- ✅ Aucune connexion internet requise
+- ✅ Exécution instantanée
+- ✅ Détection automatique des doublons
+
+Pour plus d'informations, consultez le [Guide des Scripts](SCRIPTS_GUIDE.md).
+
 ## 📊 Événements historiques inclus
 
-L'application inclut actuellement 18 événements historiques majeurs, couvrant plus de 2000 ans d'histoire :
+L'application peut contenir jusqu'à 47 événements historiques majeurs, couvrant plus de 2600 ans d'histoire :
 
 1. **Bataille d'Alésia** (-52) - Victoire romaine sur les Gaulois
 2. **Sacre de Clovis** (496) - Conversion des Francs au christianisme

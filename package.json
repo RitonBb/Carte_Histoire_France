@@ -1,0 +1,33 @@
+{
+  "name": "carte-histoire-france",
+  "version": "1.0.0",
+  "description": "Une carte interactive des événements historiques de France",
+  "main": "app.js",
+  "scripts": {
+    "enrich": "node enrich-data.js 10",
+    "enrich-more": "node enrich-data.js 20",
+    "enrich-all": "node enrich-data.js 50",
+    "fetch-events": "node fetch-events.js",
+    "fetch-events-many": "node fetch-events.js 50",
+    "fetch-events-force": "node fetch-events.js 30 --force",
+    "validate": "node -c app.js && node -c data.js && node -c api.js && node -c fetch-events.js && node -c enrich-data.js",
+    "test": "npm run validate"
+  },
+  "keywords": [
+    "histoire",
+    "france",
+    "carte",
+    "interactive",
+    "wikidata",
+    "wikipedia"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RitonBb/Carte_Histoire_France"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
