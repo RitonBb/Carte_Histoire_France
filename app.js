@@ -75,7 +75,8 @@ class CarteHistoireFrance {
             icon: L.divIcon({
                 className: 'custom-marker',
                 html: icon,
-                iconSize: [30, 30]
+                iconSize: [36, 36],
+                iconAnchor: [18, 18]
             })
         }).addTo(this.map);
 
