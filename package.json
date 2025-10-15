@@ -11,7 +11,8 @@
     "fetch-events-many": "node fetch-events.js 50",
     "fetch-events-force": "node fetch-events.js 30 --force",
     "validate": "node -c app.js && node -c data.js && node -c api.js && node -c fetch-events.js && node -c enrich-data.js",
-    "test": "npm run validate"
+    "test": "npm run validate",
+    "verify-fix": "node verify-fix.js"
   },
   "keywords": [
     "histoire",
