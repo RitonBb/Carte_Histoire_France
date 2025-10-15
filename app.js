@@ -257,20 +257,22 @@ class CarteHistoireFrance {
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #667eea;
+            background: var(--primary-gradient);
             color: white;
             padding: 1rem 2rem;
-            border-radius: 5px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-xl);
             z-index: 3000;
-            animation: slideIn 0.3s ease;
+            animation: slideInNotification 0.3s ease;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
         `;
         notification.textContent = message;
         document.body.appendChild(notification);
 
         // Remove after 3 seconds
         setTimeout(() => {
-            notification.style.animation = 'slideOut 0.3s ease';
+            notification.style.animation = 'slideOutNotification 0.3s ease';
             setTimeout(() => {
                 document.body.removeChild(notification);
             }, 300);
@@ -323,30 +325,3 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('🗺️ Carte Histoire France initialisée');
     console.log(`📍 ${historicalEvents.length} événements historiques chargés`);
 });
-
-// Add CSS animations
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideIn {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideOut {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
