@@ -1,0 +1,365 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+header .subtitle {
+    font-size: 0.9rem;
+    opacity: 0.95;
+}
+
+/* Control Panel */
+#control-panel {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.control-group label {
+    font-weight: 600;
+    color: #333;
+}
+
+#period-select {
+    padding: 0.5rem 1rem;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: white;
+    min-width: 200px;
+}
+
+#period-select:focus {
+    outline: none;
+    border-color: #764ba2;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #667eea;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Map Container */
+#map {
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+
+/* Leaflet Popup Customization */
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    padding: 0;
+}
+
+.leaflet-popup-content {
+    margin: 0;
+    min-width: 250px;
+}
+
+.popup-content {
+    padding: 1rem;
+}
+
+.popup-content h3 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.popup-content p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.popup-content .period {
+    display: inline-block;
+    background: #764ba2;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.popup-content button {
+    margin-top: 0.8rem;
+    width: 100%;
+    background: #667eea;
+}
+
+/* Event Details Panel */
+#event-details {
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    width: 400px;
+    max-height: 80%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    overflow-y: auto;
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+#event-details.hidden {
+    display: none;
+}
+
+#event-details h2 {
+    color: #667eea;
+    margin-bottom: 1rem;
+    padding-right: 30px;
+}
+
+#event-details .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.5rem;
+    width: auto;
+}
+
+#event-details .close-btn:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+#event-content {
+    line-height: 1.6;
+}
+
+#event-content p {
+    margin-bottom: 1rem;
+}
+
+#event-content .metadata {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+#event-content .metadata strong {
+    color: #667eea;
+}
+
+#event-content .sources {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+#event-content .sources h4 {
+    color: #764ba2;
+    margin-bottom: 0.5rem;
+}
+
+#event-content .sources a {
+    color: #667eea;
+    text-decoration: none;
+    display: block;
+    margin: 0.3rem 0;
+}
+
+#event-content .sources a:hover {
+    text-decoration: underline;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.modal-content h3 {
+    color: #764ba2;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-content ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.modal-content li {
+    margin: 0.5rem 0;
+}
+
+/* Loading Indicator */
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 2001;
+}
+
+#loading.hidden {
+    display: none;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #667eea;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.3rem;
+    }
+    
+    #control-panel {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .control-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #period-select {
+        width: 100%;
+    }
+    
+    #event-details {
+        width: 90%;
+        right: 5%;
+        left: 5%;
+    }
+    
+    .modal-content {
+        margin: 1rem;
+        max-width: calc(100% - 2rem);
+    }
+}
+
+/* Custom Marker Styles */
+.custom-marker {
+    background: #667eea;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-marker:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
